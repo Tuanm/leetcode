@@ -2,13 +2,9 @@ package leetcode
 
 import "strings"
 
-type void struct{}
-
-var v void
-
 // https://leetcode.com/problems/unique-email-addresses/
 func NumUniqueEmails(emails []string) int {
-	all := make(map[string]void)
+	all := make(map[string]Void)
 	for _, email := range emails {
 		var sb strings.Builder
 		var dm bool
@@ -33,7 +29,7 @@ func NumUniqueEmails(emails []string) int {
 			}
 			sb.WriteRune(c)
 		}
-		all[sb.String()] = v
+		all[sb.String()] = Void{}
 	}
 	return len(all)
 }
