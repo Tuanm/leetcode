@@ -1,0 +1,17 @@
+{
+    "build": {
+        "context": ".",
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "eamodio.gitlens",
+                "golang.Go",
+                "redhat.vscode-yaml",
+                "shardulm94.trailing-spaces",
+                "VisualStudioExptTeam.vscodeintellicode"
+            ]
+        }
+    }
+}
